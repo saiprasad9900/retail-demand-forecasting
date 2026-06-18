@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: weekly_sales
+    description: "Aggregated weekly sales metrics from `raw.daily_sales`"
+    columns:
+      - name: week_start
+        tests:
+          - not_null
+      - name: total_sales
+        tests:
+          - not_null
+  - name: monthly_sales
+    description: "Aggregated monthly sales metrics from `raw.daily_sales`"
+    columns:
+      - name: month_start
+        tests:
+          - not_null
+      - name: total_sales
+        tests:
+          - not_null
