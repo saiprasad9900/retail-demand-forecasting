@@ -1,0 +1,4 @@
+Input file: D:\retail-demand-forecasting\data\processed\features_engineered_complete.csv
+Rows read: 1913
+Weekly rows: 274
+Monthly rows: 64
