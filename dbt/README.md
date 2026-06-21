@@ -42,3 +42,104 @@ Notes and next steps:
 
 Partial weeks: Small day_count means the week is incomplete in the source — verify missing days if you expect full weeks.
 Average daily sales: Useful to add as avg_daily = total_sales / day_count.
+
+# dbt Transformations
+
+## Overview
+
+This folder contains the dbt models developed during Week 2 of the Retail Demand Forecasting project.
+
+The objective of these models is to transform daily sales data into weekly and monthly aggregated views that can be used for analysis and support future demand forecasting tasks.
+
+---
+
+## Aggregation Models
+
+### weekly_sales.sql
+
+This model aggregates daily sales records into weekly summaries.
+
+**Output:**
+
+* weekly_sales.csv
+
+### monthly_sales.sql
+
+This model aggregates daily sales records into monthly summaries.
+
+**Output:**
+
+* monthly_sales.csv
+
+---
+
+## Data Marts
+
+The following analytical marts were created from the cleaned sales dataset during Week 2.
+
+### Store Mart
+
+**Output:**
+
+* store_mart.csv
+
+**Purpose:**
+
+* Store-level sales analysis
+* Store performance comparison
+
+### State Mart
+
+**Output:**
+
+* state_mart.csv
+
+**Purpose:**
+
+* Regional sales analysis
+* State-level performance comparison
+
+### Product Mart
+
+**Output:**
+
+* product_mart.csv
+
+**Purpose:**
+
+* Product-level sales analysis
+* Identification of high-demand products
+
+---
+
+## Data Lineage
+
+Raw M5 Dataset
+
+→ Data Cleaning
+
+→ Feature Engineering
+
+→ Weekly Aggregation (dbt)
+
+→ Monthly Aggregation (dbt)
+
+→ Store Mart / State Mart / Product Mart
+
+→ Forecasting Models (Week 3)
+
+---
+
+## Outputs Generated
+
+* weekly_sales.csv
+* monthly_sales.csv
+* store_mart.csv
+* state_mart.csv
+* product_mart.csv
+
+---
+
+## Note on Tooling
+
+The original project specification recommended using Google BigQuery or Snowflake as the data warehouse layer. For this implementation, processed CSV datasets were used as the primary source for transformations and analysis.
