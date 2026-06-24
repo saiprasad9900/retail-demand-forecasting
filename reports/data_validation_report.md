@@ -1,5 +1,5 @@
-# Data Validation & Preparation Report
-## Team Member 3 - Week 3 Day 1
+# Data Validation & Preparation Report                                                                                                                                                         
+## Team Member 3 - Week 3 Day 1                                                                                                                                                      
 
 ---
 
