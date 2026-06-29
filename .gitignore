@@ -1,1 +1,6 @@
 data/raw/*.csv
+test_config.py
+test_loader.py
+dashboard/__pycache__/
+outputs/
+notebooks/marts_development.ipynb
