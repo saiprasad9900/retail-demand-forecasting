@@ -1,3 +1,25 @@
+# M5 Retail Sales Forecasting Project
+
+## Project Overview
+This project builds an end-to-end retail sales forecasting workflow using the Kaggle M5 Forecasting Dataset. The goal is to analyze historical Walmart sales data, uncover business insights, engineer features, and generate forecasts that support demand planning and inventory decisions.
+
+## Business Problem
+Retail companies need reliable demand forecasts to:
+- maintain optimal inventory levels
+- reduce stock shortages
+- avoid overstocking
+- improve supply chain planning
+- increase revenue
+- reduce operational costs
+
+## Project Goals
+- analyze historical sales patterns and trends
+- build a forecasting model for future demand
+- create an interactive dashboard for business users
+- provide forecast outputs that support planning decisions
+
+---
+
 # Week 3 Complete Summary: Prophet Forecasting Pipeline
 
 ## What Was Accomplished in Week 3
