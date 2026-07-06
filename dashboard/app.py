@@ -4,6 +4,11 @@ import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
 
+try:
+    import prophet  # noqa: F401
+except Exception:  # pragma: no cover - optional dependency for deployment
+    prophet = None
+
 from dashboard.services import (
     get_dashboard_data,
     get_date_bounds,
